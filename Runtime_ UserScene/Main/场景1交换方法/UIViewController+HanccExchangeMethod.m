@@ -13,15 +13,12 @@
 {
     static dispatch_once_t token;
     dispatch_once(&token, ^{
-        // 获取本类的类型
-        Class selfClass = object_getClass(self);
-        
         // 获取方法
-        SEL originalSEL = @selector(setView:);
-        Method originalMethod = class_getInstanceMethod(self, originalSEL);
+        SEL originalSEL = @selector(viewDidLoad);
         // 要交换的方法
-        SEL customSEL = @selector(HanccSetView:);
-        Method customMethod = class_getInstanceMethod(self, customSEL);
+        SEL customSEL = @selector(HanccViewDidLoad);
+        Method originalMethod   = class_getInstanceMethod(self, originalSEL);
+        Method customMethod     = class_getInstanceMethod(self, customSEL);
         
         BOOL success = class_addMethod(self, originalSEL, method_getImplementation(customMethod), method_getTypeEncoding(customMethod));
         if (success)
@@ -32,26 +29,17 @@
         {
             method_exchangeImplementations(originalMethod, customMethod);
         }
+        NSLog(@"😕😕");
     });
 }
-//-(void)HanccViewDidLoad
-//{
-//    [self HanccViewDidLoad];
-//    if (![NSStringFromClass(self.class) isEqualToString:@"UIViewController"])
-//    {
-//        self.view.backgroundColor = [UIColor greenColor];
-//        NSLog(@"😝😝");
-//    }
-//}
--(void)HanccSetView:(UIView *)view
+-(void)HanccViewDidLoad
 {
-    [self setView:view];
-     if (![NSStringFromClass(self.class) isEqualToString:@"UIViewController"])
-     {
-             view.backgroundColor = [UIColor purpleColor];
-         NSLog(@"😝😝");
-     }
-    
+#if 1
+    [self HanccViewDidLoad];
+#else
+    if (![NSStringFromClass(self.class) isEqualToString:@"UIViewController"])
+        self.view.backgroundColor = [UIColor greenColor];
+#endif
 }
 @end
 

@@ -15,6 +15,14 @@
 		4F15695C1F0A1E60005FA98F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F15695B1F0A1E60005FA98F /* main.m */; };
 		4F1569691F0A21BF005FA98F /* exchangeMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1569681F0A21BF005FA98F /* exchangeMethodViewController.m */; };
 		4F15696E1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F15696D1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m */; };
+		4F1593631F0B94AF00176DB4 /* HanccGetPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */; };
+		4F4268691F0B301F00C38A07 /* UIView+HanccExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4268681F0B301F00C38A07 /* UIView+HanccExchangeMethod.m */; };
+		4F42686C1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F42686B1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m */; };
+		4FCA14771F0B65CD00EAD1CA /* addPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14761F0B65CD00EAD1CA /* addPropertyViewController.m */; };
+		4FCA147A1F0B678800EAD1CA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14791F0B678800EAD1CA /* Person.m */; };
+		4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */; };
+		4FCA14811F0B715700EAD1CA /* getPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */; };
+		4FCA14841F0B764F00EAD1CA /* getPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,22 @@
 		4F1569681F0A21BF005FA98F /* exchangeMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exchangeMethodViewController.m; sourceTree = "<group>"; };
 		4F15696C1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HanccExchangeMethod.h"; sourceTree = "<group>"; };
 		4F15696D1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HanccExchangeMethod.m"; sourceTree = "<group>"; };
+		4F1593611F0B94AF00176DB4 /* HanccGetPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HanccGetPropertyMethod.h; sourceTree = "<group>"; };
+		4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HanccGetPropertyMethod.m; sourceTree = "<group>"; };
+		4F4268671F0B301F00C38A07 /* UIView+HanccExchangeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HanccExchangeMethod.h"; sourceTree = "<group>"; };
+		4F4268681F0B301F00C38A07 /* UIView+HanccExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HanccExchangeMethod.m"; sourceTree = "<group>"; };
+		4F42686A1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HanccExchangeMethod.h"; sourceTree = "<group>"; };
+		4F42686B1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HanccExchangeMethod.m"; sourceTree = "<group>"; };
+		4FCA14751F0B65CD00EAD1CA /* addPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addPropertyViewController.h; sourceTree = "<group>"; };
+		4FCA14761F0B65CD00EAD1CA /* addPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = addPropertyViewController.m; sourceTree = "<group>"; };
+		4FCA14781F0B678800EAD1CA /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4FCA14791F0B678800EAD1CA /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4FCA147B1F0B683C00EAD1CA /* Person+HanccAddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+HanccAddProperty.h"; sourceTree = "<group>"; };
+		4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+HanccAddProperty.m"; sourceTree = "<group>"; };
+		4FCA147F1F0B715700EAD1CA /* getPrivateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getPrivateViewController.h; sourceTree = "<group>"; };
+		4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getPrivateViewController.m; sourceTree = "<group>"; };
+		4FCA14821F0B764F00EAD1CA /* getPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getPropertyMethod.h; sourceTree = "<group>"; };
+		4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getPropertyMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +110,9 @@
 		4F1569631F0A1E7D005FA98F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4F15696A1F0A2213005FA98F /* exchangeMethod */,
+				4F15696A1F0A2213005FA98F /* 场景1交换方法 */,
+				4FCA14741F0B65BD00EAD1CA /* 场景2添加属性 */,
+				4FCA147E1F0B711000EAD1CA /* 场景3获取私有属性和方法 */,
 				4F15694F1F0A1E60005FA98F /* ViewController.h */,
 				4F1569501F0A1E60005FA98F /* ViewController.m */,
 				4F1569521F0A1E60005FA98F /* Main.storyboard */,
@@ -94,15 +120,45 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		4F15696A1F0A2213005FA98F /* exchangeMethod */ = {
+		4F15696A1F0A2213005FA98F /* 场景1交换方法 */ = {
 			isa = PBXGroup;
 			children = (
 				4F15696C1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.h */,
 				4F15696D1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m */,
+				4F4268671F0B301F00C38A07 /* UIView+HanccExchangeMethod.h */,
+				4F4268681F0B301F00C38A07 /* UIView+HanccExchangeMethod.m */,
+				4F42686A1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.h */,
+				4F42686B1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m */,
 				4F1569671F0A21BF005FA98F /* exchangeMethodViewController.h */,
 				4F1569681F0A21BF005FA98F /* exchangeMethodViewController.m */,
 			);
-			path = exchangeMethod;
+			path = "场景1交换方法";
+			sourceTree = "<group>";
+		};
+		4FCA14741F0B65BD00EAD1CA /* 场景2添加属性 */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA14781F0B678800EAD1CA /* Person.h */,
+				4FCA14791F0B678800EAD1CA /* Person.m */,
+				4FCA147B1F0B683C00EAD1CA /* Person+HanccAddProperty.h */,
+				4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */,
+				4FCA14751F0B65CD00EAD1CA /* addPropertyViewController.h */,
+				4FCA14761F0B65CD00EAD1CA /* addPropertyViewController.m */,
+			);
+			path = "场景2添加属性";
+			sourceTree = "<group>";
+		};
+		4FCA147E1F0B711000EAD1CA /* 场景3获取私有属性和方法 */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA147F1F0B715700EAD1CA /* getPrivateViewController.h */,
+				4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */,
+				4FCA14821F0B764F00EAD1CA /* getPropertyMethod.h */,
+				4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */,
+				4F1593611F0B94AF00176DB4 /* HanccGetPropertyMethod.h */,
+				4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */,
+			);
+			path = "场景3获取私有属性和方法";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +231,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F4268691F0B301F00C38A07 /* UIView+HanccExchangeMethod.m in Sources */,
 				4F1569691F0A21BF005FA98F /* exchangeMethodViewController.m in Sources */,
 				4F1569511F0A1E60005FA98F /* ViewController.m in Sources */,
+				4FCA14771F0B65CD00EAD1CA /* addPropertyViewController.m in Sources */,
+				4FCA14841F0B764F00EAD1CA /* getPropertyMethod.m in Sources */,
+				4F1593631F0B94AF00176DB4 /* HanccGetPropertyMethod.m in Sources */,
 				4F15696E1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m in Sources */,
+				4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */,
 				4F15695C1F0A1E60005FA98F /* main.m in Sources */,
+				4FCA147A1F0B678800EAD1CA /* Person.m in Sources */,
+				4F42686C1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m in Sources */,
+				4FCA14811F0B715700EAD1CA /* getPrivateViewController.m in Sources */,
 				4F15694E1F0A1E60005FA98F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +416,7 @@
 				4F1569611F0A1E60005FA98F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
