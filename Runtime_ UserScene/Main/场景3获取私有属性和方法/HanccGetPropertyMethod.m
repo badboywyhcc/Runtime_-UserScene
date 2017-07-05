@@ -9,8 +9,23 @@
 #import "HanccGetPropertyMethod.h"
 
 @implementation HanccGetPropertyMethod
+
+/* 获取对象的所有属性 */
+- (NSArray *)HanccGetAllProperties
+{
+    u_int count;
+    objc_property_t *properties  =class_copyPropertyList([self class], &count);
+    NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:count];
+    for (int i = 0; i < count ; i++)
+    {
+        const char* propertyName =property_getName(properties[i]);
+        [propertiesArray addObject: [NSString stringWithUTF8String: propertyName]];
+    }
+    free(properties);
+    return propertiesArray;
+}
 /* 获取对象的所有属性和属性内容 */
-- (NSDictionary *)getAllPropertiesAndVaules
+- (NSDictionary *)HanccGetAllPropertiesAndVaules
 {
     NSMutableDictionary *props = [NSMutableDictionary dictionary];
     unsigned int outCount, i;
@@ -26,27 +41,8 @@
     free(properties);
     return props;
 }
-/* 获取对象的所有属性 */
-- (NSArray *)getAllProperties
-{
-    u_int count;
-    
-    objc_property_t *properties  =class_copyPropertyList([self class], &count);
-    
-    NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:count];
-    
-    for (int i = 0; i < count ; i++)
-    {
-        const char* propertyName =property_getName(properties[i]);
-        [propertiesArray addObject: [NSString stringWithUTF8String: propertyName]];
-    }
-    
-    free(properties);
-    
-    return propertiesArray;
-}
 /* 获取对象的所有方法 */
--(void)getAllMethods
+-(void)HanccGetAllMethods
 {
     unsigned int mothCout_f =0;
     Method* mothList_f = class_copyMethodList([self class],&mothCout_f);
@@ -63,4 +59,27 @@
               [NSString stringWithUTF8String:encoding]);
     }
     free(mothList_f);
-}@end
+}
+
++(void)HanccLoadMethod:(id)obj dispatch_token:(dispatch_once_t)token originalSEL:(SEL)originalsel customSEL:(SEL)customsel
+{
+    dispatch_once(&token, ^{
+        // 获取方法
+        SEL originalSEL = originalsel;
+        SEL customSEL = customsel;
+        Method originalMethod   = class_getInstanceMethod(obj, originalSEL);
+        Method customMethod     = class_getInstanceMethod(obj, customSEL);
+        
+        BOOL success = class_addMethod([obj class], originalSEL, method_getImplementation(customMethod), method_getTypeEncoding(customMethod));
+        if (success)
+        {
+            class_replaceMethod(obj, customSEL, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        }
+        else
+        {
+            method_exchangeImplementations(originalMethod, customMethod);
+        }
+//        NSLog(@"😝😝");
+    });
+}
+@end

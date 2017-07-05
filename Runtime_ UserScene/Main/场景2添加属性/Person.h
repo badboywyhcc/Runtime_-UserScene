@@ -10,5 +10,6 @@
 #import "HanccGetPropertyMethod.h"
 @interface Person : HanccGetPropertyMethod
 @property(nonatomic,copy) NSString *name;
-
+//公共方法
+- (void)publicMethod;
 @end

@@ -10,6 +10,8 @@
 #import "exchangeMethodViewController.h"
 #import "addPropertyViewController.h"
 #import "getPrivateViewController.h"
+#import "ModifyViewController.h"
+
 
 @interface ViewController ()
 
@@ -38,6 +40,11 @@
 - (IBAction)getPrivate:(UIButton *)sender
 {
     getPrivateViewController *vc = [[getPrivateViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)modifyProperty:(UIButton *)sender
+{
+    ModifyViewController *vc = [[ModifyViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

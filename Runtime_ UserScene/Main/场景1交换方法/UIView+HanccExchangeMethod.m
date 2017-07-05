@@ -7,34 +7,17 @@
 //
 
 #import "UIView+HanccExchangeMethod.h"
-#import <objc/runtime.h>
+#import "HanccGetPropertyMethod.h"
 
 @implementation UIView (HanccExchangeMethod)
 +(void)load
 {
     static dispatch_once_t token;
-    dispatch_once(&token, ^{
-        // 获取方法
-        SEL originalSEL = @selector(setBackgroundColor:);
-        SEL customSEL = @selector(HanccSetBackgroundColor:);
-        Method originalMethod   = class_getInstanceMethod(self, originalSEL);
-        Method customMethod     = class_getInstanceMethod(self, customSEL);
-        
-        BOOL success = class_addMethod(self, originalSEL, method_getImplementation(customMethod), method_getTypeEncoding(customMethod));
-        if (success)
-        {
-            class_replaceMethod(self, customSEL, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
-        }
-        else
-        {
-            method_exchangeImplementations(originalMethod, customMethod);
-        }
-        NSLog(@"😝😝");
-    });
+    [HanccGetPropertyMethod HanccLoadMethod:self dispatch_token:token originalSEL:@selector(setBackgroundColor:) customSEL:@selector(HanccSetBackgroundColor:)];
 }
 -(void)HanccSetBackgroundColor:(UIColor *)color
 {
-#if 1
+#if 1  //条件编译,为0:执行原来的内容，不为0:hook  走hook方法
     [self HanccSetBackgroundColor:color];
 #else
     if (![NSStringFromClass(self.class) isEqualToString:@"UIView"])

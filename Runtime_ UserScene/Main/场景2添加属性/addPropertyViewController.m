@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
+//    self.view.backgroundColor = [UIColor lightGrayColor];
     // 类扩展添加的属性，子类不能继承。通过分类添加属性。
     Person *p = [[Person alloc]init];
     p.name = @"Hancc";

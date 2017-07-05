@@ -22,7 +22,7 @@
 		4FCA147A1F0B678800EAD1CA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14791F0B678800EAD1CA /* Person.m */; };
 		4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */; };
 		4FCA14811F0B715700EAD1CA /* getPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */; };
-		4FCA14841F0B764F00EAD1CA /* getPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */; };
+		4FEED4F61F0CF26200180B36 /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEED4F51F0CF26200180B36 /* ModifyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +54,8 @@
 		4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+HanccAddProperty.m"; sourceTree = "<group>"; };
 		4FCA147F1F0B715700EAD1CA /* getPrivateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getPrivateViewController.h; sourceTree = "<group>"; };
 		4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getPrivateViewController.m; sourceTree = "<group>"; };
-		4FCA14821F0B764F00EAD1CA /* getPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getPropertyMethod.h; sourceTree = "<group>"; };
-		4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getPropertyMethod.m; sourceTree = "<group>"; };
+		4FEED4F41F0CF26200180B36 /* ModifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyViewController.h; sourceTree = "<group>"; };
+		4FEED4F51F0CF26200180B36 /* ModifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +113,7 @@
 				4F15696A1F0A2213005FA98F /* 场景1交换方法 */,
 				4FCA14741F0B65BD00EAD1CA /* 场景2添加属性 */,
 				4FCA147E1F0B711000EAD1CA /* 场景3获取私有属性和方法 */,
+				4FEED4F31F0CF11300180B36 /* 场景4修改私有属性值 */,
 				4F15694F1F0A1E60005FA98F /* ViewController.h */,
 				4F1569501F0A1E60005FA98F /* ViewController.m */,
 				4F1569521F0A1E60005FA98F /* Main.storyboard */,
@@ -153,12 +154,19 @@
 			children = (
 				4FCA147F1F0B715700EAD1CA /* getPrivateViewController.h */,
 				4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */,
-				4FCA14821F0B764F00EAD1CA /* getPropertyMethod.h */,
-				4FCA14831F0B764F00EAD1CA /* getPropertyMethod.m */,
 				4F1593611F0B94AF00176DB4 /* HanccGetPropertyMethod.h */,
 				4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */,
 			);
 			path = "场景3获取私有属性和方法";
+			sourceTree = "<group>";
+		};
+		4FEED4F31F0CF11300180B36 /* 场景4修改私有属性值 */ = {
+			isa = PBXGroup;
+			children = (
+				4FEED4F41F0CF26200180B36 /* ModifyViewController.h */,
+				4FEED4F51F0CF26200180B36 /* ModifyViewController.m */,
+			);
+			path = "场景4修改私有属性值";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FEED4F61F0CF26200180B36 /* ModifyViewController.m in Sources */,
 				4F4268691F0B301F00C38A07 /* UIView+HanccExchangeMethod.m in Sources */,
 				4F1569691F0A21BF005FA98F /* exchangeMethodViewController.m in Sources */,
 				4F1569511F0A1E60005FA98F /* ViewController.m in Sources */,
 				4FCA14771F0B65CD00EAD1CA /* addPropertyViewController.m in Sources */,
-				4FCA14841F0B764F00EAD1CA /* getPropertyMethod.m in Sources */,
 				4F1593631F0B94AF00176DB4 /* HanccGetPropertyMethod.m in Sources */,
 				4F15696E1F0A2295005FA98F /* UIViewController+HanccExchangeMethod.m in Sources */,
 				4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */,

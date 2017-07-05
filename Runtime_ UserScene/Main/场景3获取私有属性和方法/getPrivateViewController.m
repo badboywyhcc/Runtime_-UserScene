@@ -8,7 +8,6 @@
 
 #import "getPrivateViewController.h"
 #import "Person+HanccAddProperty.h"
-#import "getPropertyMethod.h"
 @interface getPrivateViewController ()
 
 @end
@@ -18,23 +17,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor lightGrayColor];
+//    self.view.backgroundColor = [UIColor lightGrayColor];
     Person *p = [[Person alloc]init];
     p.name = @"Hancc";
     p.height = 17.6f;
     p.sizeArr = @[@15,@56,@78];
-    NSArray *arr1 = [getPropertyMethod getAllProperties:[Person class]];
+    
+    // 获取属性
+    // 获取属性和对应的值
+    NSArray *arr1 = [p HanccGetAllProperties];
     for (id obj in arr1)
     {
-        NSLog(@"属性:%@",NSStringFromClass([obj class]));
+        NSLog(@"%@",obj);
     }
     
-    UIButton *ii = [[UIButton alloc]init];
     
-//    NSDictionary *dict = [getPropertyMethod getAllPropertiesAndVaules:ii];
-    NSDictionary *dict = [p getAllPropertiesAndVaules];
+    // 获取属性和对应的值
+    NSDictionary *dict = [p HanccGetAllPropertiesAndVaules];
     NSLog(@"字典:%@",dict);
-    [getPropertyMethod getAllMethods:[Person class]];
+    
+    // 获取方法
+    [p HanccGetAllMethods];
 }
 
 @end
