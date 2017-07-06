@@ -22,12 +22,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 }
 // 交换方法
 - (IBAction)exchangeMethod:(UIButton *)sender
 {
-    NSLog(@"交换方法");
+//    NSLog(@"交换方法");
     exchangeMethodViewController *vc = [[exchangeMethodViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }

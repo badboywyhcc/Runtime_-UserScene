@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    !HanccCommonComponentsConfig.Hancc_viewDidLoad?:[HanccCommonComponentsConfig Hancc_viewDidLoad](self);
+//    !HanccCommonComponentsConfig.Hancc_viewDidLoad?:[HanccCommonComponentsConfig Hancc_viewDidLoad](self);
 }
 -(void)viewWillAppear:(BOOL)animated
 {

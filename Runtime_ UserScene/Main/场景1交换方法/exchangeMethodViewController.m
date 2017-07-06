@@ -18,8 +18,10 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    NSLog(@"原始界面换");
     UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    view1.backgroundColor = [UIColor yellowColor];
+    view1.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:view1];
     
     

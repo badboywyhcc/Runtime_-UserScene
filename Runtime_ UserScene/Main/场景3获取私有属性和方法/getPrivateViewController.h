@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HanccBasicViewController.h"
-@interface getPrivateViewController : HanccBasicViewController
+
+@interface getPrivateViewController : UIViewController
 
 @end

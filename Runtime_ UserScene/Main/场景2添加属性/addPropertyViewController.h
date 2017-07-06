@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HanccBasicViewController.h"
-@interface addPropertyViewController : HanccBasicViewController
+
+@interface addPropertyViewController : UIViewController
 
 @end

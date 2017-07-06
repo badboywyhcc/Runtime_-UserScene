@@ -23,6 +23,9 @@
         [vc.navigationController.navigationBar setTranslucent:YES]; // 设置navigationBar的透明效果
         [vc.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar"] forBarMetrics:UIBarMetricsDefault];
     }];
+//    [HanccCommonComponentsConfig Hancc_viewWillAppear:^(UIViewController *vc) {
+//        vc.view.backgroundColor =[UIColor purpleColor];
+//    }];
     
     return YES;
 }

@@ -21,7 +21,7 @@
     [self HanccSetBackgroundColor:color];
 #else
     if (![NSStringFromClass(self.class) isEqualToString:@"UIView"])
-        [self HanccSetBackgroundColor:[UIColor yellowColor]];
+        [self HanccSetBackgroundColor:[UIColor greenColor]];
 #endif
 }
 

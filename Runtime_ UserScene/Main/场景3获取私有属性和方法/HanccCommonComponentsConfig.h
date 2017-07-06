@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+
 typedef void(^viewDidLoad)(UIViewController *vc);
 typedef void(^viewWillAppear)(UIViewController *vc);
 typedef void(^viewDidAppear)(UIViewController *vc);
@@ -44,9 +46,5 @@ typedef void(^viewDidDisappear)(UIViewController *vc);
 +(void)Hancc_viewDidDisappear:(viewDidDisappear)viewDidDisappear;
 
 
-#pragma mark- 不对外开放的视图控制对象生命周期API函数
-+(viewDidLoad)Hancc_viewDidLoad;
-+(viewWillAppear)Hancc_viewWillAppear;
-+(viewDidAppear)Hancc_viewDidAppear;
-+(viewWillDisappear)Hancc_viewWillDisappear;
-+(viewDidDisappear)Hancc_viewDidDisappear;@end
+
+@end

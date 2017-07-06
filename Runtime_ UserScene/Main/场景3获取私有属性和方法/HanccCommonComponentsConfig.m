@@ -23,7 +23,7 @@
 }
 
 
-+ (void)Hancc_viewDidLoad:(viewDidLoad)viewDidLoad
++ (void)Hancc_viewDidLoad:(viewDidLoad)viewDidLoad 
 {
     objc_setAssociatedObject(self, @selector(Hancc_viewDidLoad:), viewDidLoad, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -45,18 +45,5 @@
 
 
 
-+(viewDidLoad)Hancc_viewDidLoad{
-    return objc_getAssociatedObject(self, @selector(Hancc_viewDidLoad:));
-}
-+(viewWillAppear)Hancc_viewWillAppear{
-    return objc_getAssociatedObject(self, @selector(Hancc_viewWillAppear:));
-}
-+(viewDidAppear)Hancc_viewDidAppear{
-    return objc_getAssociatedObject(self, @selector(Hancc_viewDidAppear:));
-}
-+(viewWillDisappear)Hancc_viewWillDisappear{
-    return objc_getAssociatedObject(self, @selector(Hancc_viewWillDisappear:));
-}
-+(viewDidDisappear)Hancc_viewDidDisappear{
-    return objc_getAssociatedObject(self, @selector(Hancc_viewDidDisappear:));
-}@end
+
+@end
