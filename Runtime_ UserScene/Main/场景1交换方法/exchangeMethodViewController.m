@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
     
     UIView *view1 = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     view1.backgroundColor = [UIColor yellowColor];

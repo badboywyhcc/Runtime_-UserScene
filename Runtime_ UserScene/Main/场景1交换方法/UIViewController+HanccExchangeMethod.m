@@ -16,7 +16,7 @@
 }
 -(void)HanccViewDidLoad
 {
-#if 0  //条件编译,为0:执行原来的内容，不为0:hook  走hook方法
+#if 1  //条件编译,为0:执行原来的内容，不为0:hook  走hook方法
     [self HanccViewDidLoad];
 #else
     if (![NSStringFromClass(self.class) isEqualToString:@"UIViewController"])

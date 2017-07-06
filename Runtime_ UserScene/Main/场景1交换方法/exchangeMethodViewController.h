@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface exchangeMethodViewController : UIViewController
+#import "HanccBasicViewController.h"
+@interface exchangeMethodViewController : HanccBasicViewController
 
 @end

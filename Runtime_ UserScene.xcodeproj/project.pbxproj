@@ -18,10 +18,12 @@
 		4F1593631F0B94AF00176DB4 /* HanccGetPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */; };
 		4F4268691F0B301F00C38A07 /* UIView+HanccExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4268681F0B301F00C38A07 /* UIView+HanccExchangeMethod.m */; };
 		4F42686C1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F42686B1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m */; };
+		4F8D7C891F0DE6A900112974 /* HanccCommonComponentsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D7C881F0DE6A900112974 /* HanccCommonComponentsConfig.m */; };
 		4FCA14771F0B65CD00EAD1CA /* addPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14761F0B65CD00EAD1CA /* addPropertyViewController.m */; };
 		4FCA147A1F0B678800EAD1CA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14791F0B678800EAD1CA /* Person.m */; };
 		4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */; };
 		4FCA14811F0B715700EAD1CA /* getPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */; };
+		4FD2FDB41F0E087B004D169F /* HanccBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD2FDB31F0E087B004D169F /* HanccBasicViewController.m */; };
 		4FEED4F61F0CF26200180B36 /* ModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEED4F51F0CF26200180B36 /* ModifyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		4F4268681F0B301F00C38A07 /* UIView+HanccExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HanccExchangeMethod.m"; sourceTree = "<group>"; };
 		4F42686A1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HanccExchangeMethod.h"; sourceTree = "<group>"; };
 		4F42686B1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HanccExchangeMethod.m"; sourceTree = "<group>"; };
+		4F8D7C871F0DE6A900112974 /* HanccCommonComponentsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HanccCommonComponentsConfig.h; sourceTree = "<group>"; };
+		4F8D7C881F0DE6A900112974 /* HanccCommonComponentsConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HanccCommonComponentsConfig.m; sourceTree = "<group>"; };
 		4FCA14751F0B65CD00EAD1CA /* addPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addPropertyViewController.h; sourceTree = "<group>"; };
 		4FCA14761F0B65CD00EAD1CA /* addPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = addPropertyViewController.m; sourceTree = "<group>"; };
 		4FCA14781F0B678800EAD1CA /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		4FCA147C1F0B683C00EAD1CA /* Person+HanccAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+HanccAddProperty.m"; sourceTree = "<group>"; };
 		4FCA147F1F0B715700EAD1CA /* getPrivateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getPrivateViewController.h; sourceTree = "<group>"; };
 		4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getPrivateViewController.m; sourceTree = "<group>"; };
+		4FD2FDB21F0E087B004D169F /* HanccBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanccBasicViewController.h; sourceTree = "<group>"; };
+		4FD2FDB31F0E087B004D169F /* HanccBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanccBasicViewController.m; sourceTree = "<group>"; };
 		4FEED4F41F0CF26200180B36 /* ModifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyViewController.h; sourceTree = "<group>"; };
 		4FEED4F51F0CF26200180B36 /* ModifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +162,10 @@
 				4FCA14801F0B715700EAD1CA /* getPrivateViewController.m */,
 				4F1593611F0B94AF00176DB4 /* HanccGetPropertyMethod.h */,
 				4F1593621F0B94AF00176DB4 /* HanccGetPropertyMethod.m */,
+				4F8D7C871F0DE6A900112974 /* HanccCommonComponentsConfig.h */,
+				4F8D7C881F0DE6A900112974 /* HanccCommonComponentsConfig.m */,
+				4FD2FDB21F0E087B004D169F /* HanccBasicViewController.h */,
+				4FD2FDB31F0E087B004D169F /* HanccBasicViewController.m */,
 			);
 			path = "场景3获取私有属性和方法";
 			sourceTree = "<group>";
@@ -249,6 +259,8 @@
 				4FCA147D1F0B683C00EAD1CA /* Person+HanccAddProperty.m in Sources */,
 				4F15695C1F0A1E60005FA98F /* main.m in Sources */,
 				4FCA147A1F0B678800EAD1CA /* Person.m in Sources */,
+				4FD2FDB41F0E087B004D169F /* HanccBasicViewController.m in Sources */,
+				4F8D7C891F0DE6A900112974 /* HanccCommonComponentsConfig.m in Sources */,
 				4F42686C1F0B3CD600C38A07 /* UILabel+HanccExchangeMethod.m in Sources */,
 				4FCA14811F0B715700EAD1CA /* getPrivateViewController.m in Sources */,
 				4F15694E1F0A1E60005FA98F /* AppDelegate.m in Sources */,
@@ -380,28 +392,34 @@
 		4F1569601F0A1E60005FA98F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WU2WFZ2B66;
 				INFOPLIST_FILE = "Runtime_ UserScene/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanccAuto.het.Runtime--UserScene";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
 		4F1569611F0A1E60005FA98F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WU2WFZ2B66;
 				INFOPLIST_FILE = "Runtime_ UserScene/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hanccAuto.het.Runtime--UserScene";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

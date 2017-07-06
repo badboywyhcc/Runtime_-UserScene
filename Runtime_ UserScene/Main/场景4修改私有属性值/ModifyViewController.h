@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ModifyViewController : UIViewController
+#import "HanccBasicViewController.h"
+@interface ModifyViewController : HanccBasicViewController
 
 @end

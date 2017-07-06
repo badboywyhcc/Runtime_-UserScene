@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HanccCommonComponentsConfig.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [HanccCommonComponentsConfig Hancc_viewDidLoad:^(UIViewController *vc) {
+        vc.view.backgroundColor =[UIColor whiteColor];
+        [vc.navigationController.navigationBar setTranslucent:YES]; // 设置navigationBar的透明效果
+        [vc.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar"] forBarMetrics:UIBarMetricsDefault];
+    }];
+    
     return YES;
 }
 
